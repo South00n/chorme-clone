@@ -1,3 +1,92 @@
+:root {
+  --white-color: #f0f0f0;
+  --black-color: #000000;
+  --dark-gray-color: #29272793;
+
+  --padding-1: 20px;
+  --padding-2: 12px;
+  --padding-3: 8px;
+
+  --font-very-large: 8em;
+  --font-large: 3.5em;
+  --font-medium: 1.8em;
+  --font-small: 1em;
+  --font-micro: 0.7em;
+}
+
 .hidden {
   display: none;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  color: var(--white-color);
+  text-align: center;
+}
+body {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li {
+  list-style: none;
+}
+section #clock {
+  font-size: var(--font-very-large);
+  margin-bottom: var(--padding-1);
+}
+section #login-form input {
+  color: var(--white-color);
+  background-color: transparent;
+  font-size: var(--font-medium);
+  font-weight: bold;
+  border: none;
+  border-bottom: 2.5px solid;
+  margin-bottom: var(--padding-1);
+}
+section #login-form input::placeholder {
+  color: var(--white-color);
+  font-size: var(--font-small);
+}
+section #loginBtn {
+  display: none;
+}
+section #greeting {
+  font-size: var(--font-large);
+}
+section #todo-form {
+  margin-top: var(--padding-1);
+}
+section #todo-form input {
+  font-size: 1.5em;
+  padding: --padding-2;
+  border: none;
+  border-bottom: 2.5px solid;
+  background-color: transparent;
+}
+section #todo-form input::placeholder {
+  color: var(--white-color);
+  font-size: var(--font-micro);
+}
+
+#todo-list {
+  padding: var(--padding-2);
+}
+#todo-list li {
+  padding: 4px;
+}
+#quote {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+}
+#weather {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: bold;
 }
